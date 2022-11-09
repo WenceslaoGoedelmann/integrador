@@ -1,0 +1,789 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth; /* para que cuando un boton de la navbar me lleve a una sesion de la pagina el scrolleo sea suave */
+    scroll-padding-top: 100px;
+}
+body{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.section-container {
+    background-color: rgb(50, 50, 50);
+}
+
+.header{
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    z-index: 1;
+    background-color: rgb(50, 50, 50);
+}
+
+.logo-container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    }
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+ .navbar-list li a {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-list li:nth-child(2) > a  {
+    color: red;
+    
+}
+/* Menu hamburguesa  */
+
+.checkbutton{
+    font-size: 30px;
+    color:white;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none; 
+}
+
+#check{
+    display: none;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 100px;
+    align-content: center;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+   /*  align-items: center; */
+    gap: 15px;
+    
+}
+.hero-text h1 {
+    color: rgb(158, 158, 6);
+    font-size: 40px;
+    
+}
+.hero-text p {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    width: 600px;
+}
+
+.hero-img {
+    background-image: url(security.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.marcas-alarmas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.marcas-alarmas h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.marcas-alarmas-img{
+    display: flex;
+    gap: 20px;
+}
+
+.X28-img{
+    background-image: url(x28-img3.png);
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+
+}
+
+.DSC-img {
+    background-image: url(DSC-img2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.alarms-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px 30px;
+}
+
+.alarms-product-text{
+    font-size: 20px;
+    font-weight:500;
+    color: white;
+    
+    padding-top: 30px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+.product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    width: 50%;
+}
+.product-text li{
+    padding: 5px 0;
+}
+.product-text p {
+    margin-bottom: 10px;
+}
+
+
+.sensor-mov-ext{
+    background-image: url(sensor-mov-ext2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+.sensor-mov-int{
+    background-image: url(sensor-mov-img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+.sensor-mag{
+    background-image: url(sensor-mag-img.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+
+.teclado{
+    background-image: url(teclado-img6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+.control{
+    background-image: url(control-remoto-img2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+#contact{
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 20px;
+    font-weight:250;
+}
+.contact-info a{
+    color: white; 
+   text-decoration: underline;
+   margin-left: 5px;
+}     
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ .instagram-icon{
+    background-image: url(Instagram-icon.png);
+    height: 35px;
+    width: 35px;
+    background-size: cover;
+    background-position: center;
+ }
+ .facebook-icon{
+    background-image: url(Facebook-icon.png);
+    height: 35px;
+    width: 35px;
+    background-size: cover;
+    background-position: center;
+ }
+
+
+
+ .info-client{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+
+ }
+ form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    gap: 10px; 
+    
+ }
+
+ button{
+    height: 35px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0px solid black;
+ }
+
+ button:hover{
+    background-color: rgb(185, 185, 185);
+    transition: all 0.4s linear;
+  }
+
+.whatsapp{
+    background-image: url(WhatsApp.svg);
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    background-size: cover;
+    background-position: center; 
+    left: 10px;
+    bottom: 10px;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+@media (max-width: 1160px){
+    .hero-text h1 {
+        font-size: 30px;   
+    }
+    .hero-text p {
+        font-size: 20px;
+        font-weight: 700;
+        width: 550px;
+    }
+    
+    .hero-img {
+        width: 400px;
+        height: 220px;
+      
+    }
+    .marcas-alarmas h2 {
+      
+        font-size: 30px;
+    }
+    .sensor-mov-ext{
+        width: 250px;
+        height: 250px;
+     }
+    .sensor-mov-int{
+        width: 250px;
+        height: 250px;
+    }
+    .sensor-mag{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .teclado{
+        width: 250px;
+        height: 250px;
+    }
+    .control{
+        width: 250px;
+        height: 250px;
+        }
+    
+}
+
+ @media (max-width: 950px){
+    .hero-text h1 {
+        font-size: 25px;   
+    }
+    .hero-text p {
+        font-size: 18px;
+        font-weight: 700;
+        width: 450px;
+    }
+    
+    .hero-img {
+        width: 380px;
+        height: 200px;
+      
+    }
+    .marcas-alarmas h2 {
+        font-size: 25px;
+    }
+    .X28-img{
+        width: 250px;
+        height: 150px; 
+    }
+    
+    .DSC-img {
+        width: 250px;
+        height: 150px; 
+    }
+    .alarms-product-text{
+        font-size: 18px;
+    }  
+}
+
+@media (max-width: 840px){
+    .navbar-list li a {
+        font-size: 17px;
+     }
+     .navbar-list{
+         gap: 30px;
+     }
+    .hero-text h1 {
+        font-size: 20px;   
+    }
+    .hero-text p {
+        font-size: 15px;
+        font-weight: 700;
+        width: 400px;
+    }
+    .hero-img {
+        width: 300px;
+        height: 160px;
+      
+    }
+    .marcas-alarmas h2 {
+        font-size: 20px;
+    }
+    .X28-img{
+        width: 200px;
+        height: 100px; 
+    }
+    
+    .DSC-img {
+        width: 200px;
+        height: 100px;
+    }
+    .alarms-product-text{
+        font-size: 15px;
+    }  
+
+    .product-text h3{
+        font-size: 17px;
+    }
+    .product-text p {
+        font-size: 14px;
+    }
+    .product-text span {
+        font-size: 15px;
+    }
+    .product-text li {
+        font-size: 14px;
+    }
+
+    .contact-info{
+        font-size: 15px;
+        }
+   .info-client{
+        font-size: 15px;
+        }     
+        button{
+            height: 30px;
+            width: 60px;
+            font-size: 13px;
+            font-weight: 800;
+         }
+        
+        .whatsapp{
+            height: 50px;
+            width: 50px;
+        }      
+}
+
+@media (max-width: 755px){
+    .header{
+        height: 70px;
+    }
+    .hero{
+        padding-top: 70px;
+    }
+    .navbar-list li a {
+        font-size: 15px;
+     }
+     .navbar-list{
+         gap: 25px;
+     }
+     .hero-text h1 {
+        font-size: 20px;   
+    }
+    .hero-text p {
+        font-size: 15px;
+        font-weight: 700;
+        width: 320px;
+    }
+    .hero-img {
+        width: 300px;
+        height: 160px;
+      
+    }
+    .marcas-alarmas h2 {
+        font-size: 18px;
+    }
+    .X28-img{
+        width: 200px;
+        height: 100px; 
+    }
+    
+    .DSC-img {
+        width: 200px;
+        height: 100px;
+    }
+    .alarms-product-text{
+        font-size: 15px;
+    }  
+
+
+     
+#contact{
+        display: flex;
+        flex-direction: column;
+     
+        align-items: flex-start;
+        padding-left: 100px ;
+}    
+.contact-info{
+    font-size: 18px;
+    gap: 10px;
+    margin-bottom: 15px;
+    }
+.info-client{
+    font-size: 18px;
+    }     
+    button{
+        height: 30px;
+        width: 60px;
+        font-size: 13px;
+        font-weight: 800;
+     }
+    
+    .whatsapp{
+        height: 50px;
+        width: 50px;
+    }     
+}
+
+
+
+
+@media (max-width: 650px){
+
+    .checkbutton{
+        display: block;
+    }
+    #check:checked ~ ul{
+         left: 0;
+      }
+  
+    .navbar-list{
+        display: block;
+        position: fixed; 
+        width: 100%;
+        background-color: rgb(50, 50, 50);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s; 
+    } 
+    .navbar-list li{
+        margin: 25px 0;
+    }
+    .navbar-list li a{
+        font-size: 25px;
+    }
+    .hero-text h1 {
+        font-size: 20px;   
+    }
+    .hero-text p {
+        font-size: 13px;
+        font-weight: 700;
+        width: 300px;
+    }
+    .hero-img {
+        width: 270px;
+        height: 160px;
+      
+    }
+    .alarms-product{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .sensor-mov-ext{
+        width: 200px;
+        height: 200px;
+     }
+    .sensor-mov-int{
+        width: 200px;
+        height: 200px;
+    }
+    .sensor-mag{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .teclado{
+        width: 200px;
+        height: 200px;
+    }
+    .control{
+        width: 200px;
+        height: 200px;
+    }
+        .product-text{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    .product-text h3{
+        font-size: 15px;
+    }
+    .product-text p {
+        font-size: 12px;
+    }
+    .product-text span {
+        font-size: 13px;
+    }
+    .product-text li {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 420px){
+
+    .logo{
+    height: 30px;
+    }
+
+    .checkbutton{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    .navbar-list li{
+        margin: 15px 0;
+    }
+    .navbar-list li a{
+        font-size: 15px;
+    }
+
+    .hero-text{
+        gap: 5px;   
+    }
+    .hero-text h1 {
+        font-size: 12px;
+    }
+    .hero-text p {
+        font-size: 10px;
+        font-weight: 700;
+        width: 180px;
+    }
+    
+    .hero-img {
+        width: 180px;
+        height: 100px;
+    }
+    .marcas-alarmas h2 {
+      
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .marcas-alarmas-img{
+        gap: 15px;
+    }
+    .X28-img{
+        width: 150px;
+        height: 75px;
+  
+    }
+    .DSC-img {
+        width: 150px;
+        height: 75px;
+    }
+
+    .alarms-product{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+    .sensor-mov-ext{
+        width: 150px;
+        height: 150px;
+     }
+    .sensor-mov-int{
+        width: 150px;
+        height: 150px;
+    }
+    .sensor-mag{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .teclado{
+        width: 150px;
+        height: 150px;
+    }
+    .control{
+        width: 150px;
+        height: 150px;
+    }
+        .product-text{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    .product-text h3{
+        font-size: 13px;
+    }
+    .product-text p {
+        font-size: 10px;
+    }
+    .product-text span {
+        font-size: 11px;
+    }
+    .product-text li {
+        font-size: 10px;
+    }
+    .contact-info{
+    font-size: 15px;
+    gap: 10px;
+    margin-bottom: 10px;
+        }
+    
+ .info-client{
+            padding-left: 40px; 
+        } 
+    
+        #contact{
+            padding-left: 30px ;
+        } 
+        footer{
+            font-size: 10px;
+            height: 30px;
+            width: 100%;
+            padding-top: 1px;
+        }
+}
+
+
+@media (max-width: 375px){
+
+    .hero-text p {
+        font-size: 8px;
+       
+        width: 160px;
+    }
+    .contact-info{
+        font-size: 13px;
+        gap: 10px;
+        margin-bottom: 15px;
+        }
+    
+    .info-client{
+        font-size: 13px;
+        } 
+    
+        #contact{
+            padding-left: 40px ;
+        }    
+    
+    
+      /*   .contact-info{
+            font-size: 15px;
+            gap: 10px;
+            margin-bottom: 15px;
+            } */
+       .info-client{
+           
+            padding-left: 33px; 
+            } 
+    
+        footer{
+            font-size: 10px;
+            height: 30px;
+            width: 100%;
+            padding-top: 1px;
+        }
+    }
